@@ -1,10 +1,11 @@
-.funny{
-  font-family:Comic Sans MS;
+.redText{
+  color:red;
 }
 
 .banner{
-  background-color:black;
-  color:white;
+  background-color:tan;
+  font-family:Arial;
+  font-style:italic;
 }
 
 div{
