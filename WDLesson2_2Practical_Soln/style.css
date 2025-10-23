@@ -31,3 +31,4 @@ Apply a shadow to the box around the elements that is 2px 2px  gray. */
 .shadow{
   box-shadow: gray 2px 2px;
 }
+<hr>
