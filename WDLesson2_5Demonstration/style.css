@@ -13,14 +13,16 @@ body{
   background-color:blue;
 }
 
-/* When the user hovers over a link inside the element with an id of "nav", change the color of the link to yellow */
-#nav a:hover{
-  border-bottom: 4px solid red;
-}
-
 /* Change the text decoration of all hyperlinks to none.  This removes the underline */
 a{
   text-decoration:none;
+}
+
+/* When the user hovers over a link inside the element with an id of "nav", change the background color 
+of the link to yellow and set its border bottom to a red line */
+#nav a:hover{
+  background-color: yellow;
+  border-bottom: 4px solid red;
 }
 
 .gallery img{
@@ -32,6 +34,7 @@ a{
   filter:none;
 }
 
+/* Apply a 1 second transition to all page elements */
 *{
   transition:1s;
 }
