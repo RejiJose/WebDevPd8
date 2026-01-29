@@ -30,7 +30,7 @@ let pi = 3.1415926;
 function cirArea(){
       let r = parseFloat( document.getElementById("rad").value);
       let op = document.getElementById("output");
-      let A = pi * (r **2);
+      let A = pi * (r**2);
       op.innerHTML = "Area of circle is: " + A;
 }
 
