@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WD Lesson 4.2</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+
+    </script>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div id="banner" class="container center">
+      <h1>Decision</h1>
+    </div>
+    <div class="container subbanner">
+      <div>
+        <p>This example demonstrates two basic examples of making decisions with multiple conditions combined using logical operators, && and ||. </p>
+       </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h3> System Access </h3>
+        <p> <span class="highlight">Scenario:</span> Enter the appropriate username and password to gain access to the system.</p>
+        <input type="text" id="user" placeholder="Username">
+        <input type="text" id="pwd" placeholder="Password">
+        <input type="button" onclick="login()" value="Login">
+	      <div id="example1"></div>
+      </div>
+      <div class="card"> 
+        <h3> Team Requirements </h3>
+        <p> <span class="highlight">Scenario:</span> You are eligible for the team if you are at least a junior or your GPA is over 90.</p>
+        <input type="text" placeholder="Enter grade level" id="gradelevel">
+        <input type="text" placeholder="Enter GPA" id="gpa">
+        <input type="button" value="Check" onclick="eligible()">
+        <div id="example2"></div>
+      </div>
+    </div>
+    <div id="footer" class="container center">
+      <h3>Lesson 4.2 Class Example</h3>
+    </div> 
+  </body>
+</html>
+
