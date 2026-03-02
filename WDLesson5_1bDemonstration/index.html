@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WD Lesson 5.1b</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+   </head>
+  <body id="body">
+    <div id="banner" class="container center">
+      <h1> For Loop </h1>
+    </div>
+    <div class="container subbanner">
+      <div>
+        <p>This example demonstrates three basic examples of repeating a process to produce HTML output.</p>
+       </div>
+    </div>
+    <div class="container">
+      <div id="panel">
+        <div class="card">
+          <h3>Bad Student!</h3>
+          <p><span class="highlight">Scenario:</span> Display "I will not use AI" 100 times. (Also show the loop variable)</p>
+          <a onclick="example1()"> Run </a>
+        </div>
+        <div class="card">
+          <h3>y = x<sup>2</sup></h3>
+          <p><span class="highlight">Scenario:</span> Display the first ten co-ordinates (x, y) from x = 1 through 10 that satisfy the above equation.</p>
+          <a onclick="example2()"> Coordinates </a>
+        </div>
+        <div class="card">
+          <h3>Loop Control</h3>
+          <p><span class="highlight">Scenario:</span> The visitor can be empowered to control each of the parts of a loop. Use the information provided by the visitor to display a specific range of numbers.</p>
+          <hr>
+          <input type="text" id="start" placeholder="Start">
+          <input type="text" id="end" placeholder="End">
+          <input type="text" id="increment" placeholder="Increment">
+          <a onclick="example3()"> Range </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h1>Output</h1>
+        <div id="output"></div>
+      </div>
+    </div>
+
+    <div id="footer" class="container center">
+      <h3>Lesson 5.1b Demonstration</h3>
+    </div>  
+  </body>
+</html>
