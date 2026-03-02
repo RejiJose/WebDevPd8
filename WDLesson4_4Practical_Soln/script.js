@@ -6,7 +6,11 @@
 */
 let correct;
 function generateProblem(){
-
+       let prob = document.getElementById("problem");
+       let n1 = Math.floor(Math.random()*(20-0+1) + 0);
+       let n2 = Math.floor(Math.random()*21 + 0);
+       correct = n1 + n2;
+       prob.innerHTML = `${n1} + ${n2} = `;
 }
 
 /* Challenge 3: Complete the function checkResponse by ,
@@ -19,7 +23,19 @@ function generateProblem(){
        4) Display msg in the output
 */
 function checkResponse(){
+       let user = parseInt(document.getElementById("response").value);
+       let op = document.getElementById("output");
+       let filename = "";
+       let msg = "";
 
+       if (user == correct){
+             filename = "correct.webp";
+             msg = `Correct! <br> <img src="${filename}">`;        
+       }else{
+             filename = "incorrect.avif";
+             msg = `Incorrect. The correct answer is ${correct}. <br> <img src="${filename}">`;   
+       }
+       op.innerHTML = msg;
 }
 
 
