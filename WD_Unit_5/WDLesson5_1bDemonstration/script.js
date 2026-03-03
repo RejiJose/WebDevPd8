@@ -26,7 +26,7 @@ function example3(){
   let increment = parseInt(document.getElementById("increment").value);
   let build = "";
 
-  for(let i = start; i < end; i += increment){
+  for(let i = start; i <= end; i += increment){
     build += `${i}<br>`;
   }
   output.innerHTML = build;
