@@ -2,7 +2,7 @@ function example1(){
   let output = document.getElementById("output");
   let build = ""; //empty string
 
-  for(let i = 0; i < 100; i+=1){
+  for(let i = 1; i <= 100; i+=1){
     build += `${i}. I will not use AI <br>`;
   }
   output.innerHTML = build;
