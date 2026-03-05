@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WD Lesson 5.2 Demonstration</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+   </head>
+  <body id="body">
+    <div id="banner" class="container center">
+      <h1> Building HTML Output </h1>
+    </div>
+    <div class="container subbanner">
+      <div>
+        <p>This example demonstrates using a 'for' loop to build HTML output. Most modern commercial websites use some form of dynamically generating HTML in order to empower the customer to search for items.</p>
+       </div>
+    </div>
+    <div class="container">
+      <div id="panel">
+        <div class="card">
+          <h3>Basic Card Building</h3>
+          <p><span class="highlight">Scenario:</span> Create 10 cards using the template from Wireframe1.png.</p>
+          <img src="Wireframe1.png" height="200px"><br>
+          <a onclick="example1()"> Run </a>
+        </div>
+        <div class="card">
+          <h3>Chun Li Animation</h3>
+          <p><span class="highlight">Scenario:</span> Create a card for each image in the animation of the Street Fighter character Chun Li.</p>
+          <a onclick="example2()"> Run </a>
+        </div>
+        <div class="card">
+          <h3>Addition Flash Cards</h3>
+          <p><span class="highlight">Scenario:</span> Allow the visitor to specify how many Addition-problem 'info cards' they wish to see.</p>
+          <hr>
+          <input type="text" id="num" placeholder="Enter number of problems">
+          <hr>
+          <a onclick="example3()"> Range </a>
+        </div>
+      </div>
+      <div class="card">
+        <h1>Output</h1>
+        <div id="output" class="container"></div>
+      </div>
+    </div>
+
+    <div id="footer" class="container center">
+      <h3>Lesson 5.2 Demonstration</h3>
+    </div>  
+  </body>
+</html>
