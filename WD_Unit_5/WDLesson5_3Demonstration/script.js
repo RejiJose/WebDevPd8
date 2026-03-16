@@ -6,7 +6,7 @@ function generate(){
                     <tr class="headings">
                       <th>X</th>
                       <th>Y</th>
-                    </tr>;`
+                    </tr>`;
   let output = document.getElementById("output");
   let startX = parseInt(document.getElementById("startX").value);
   let endX = parseInt(document.getElementById("endX").value);
