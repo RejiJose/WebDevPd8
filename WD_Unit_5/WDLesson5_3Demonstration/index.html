@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WD Lesson 5.3 Demonstration</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <!-- Example - onload event listener -->
+  <body>
+    <script src="script.js"></script>
+    <div id="banner" class="container center">
+      <h1> Building Table Output </h1>
+    </div>
+    <div class="container subbanner">
+      <div>
+          <p>This example demonstrates using a for loop to build an HTML table.  Additionally the user has
+            the ability to allow the user to control where to start and end the repetitions. 
+          </p>
+       </div>
+    </div>
+    <div class="container">
+        <div class="card">
+           <h3> y = x <sup>2</sup></h3>
+           <input type="text" placeholder="Starting x value" id="startX"><br>
+           <input type="text" placeholder="Ending x value" id="endX"><br>
+           <input type="button" value="Generate" onclick="generate()">
+        </div>
+        <div class="card container center">
+          <div id="output"></div>
+        </div>
+    </div>
+
+    <div id="footer" class="container center">
+      <h3>Lesson 5.3 Demonstration</h3>
+    </div>  
+  </body>
+</html>
