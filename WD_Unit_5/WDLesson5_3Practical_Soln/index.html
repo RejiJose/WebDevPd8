@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>WD_5.3 Prac Soln</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -17,8 +17,10 @@
         <h4 style="color:red">Note: For this activity we will assume interest is compounded annually. Therefore n = 1.</h4>
         <input type="text" id="p" placeholder="Principal (P)"><br>
         <input type="text" id="r" placeholder="Interest Rate as % (r)"><br>
-        <input type="text" id="t" placeholder="Investment Time period in years (t)"><br>
-        <input type="button" value="Calculate" onclick="balance()"><br>
+        <input type="text" id="n" placeholder="Compounding frequency (n)"><br>
+        <input type="text" id="t" placeholder="Investing period (t)"><br>
+        <input type="button" value="Calculate (n=1)" onclick="balance()"><br>
+        <input type="button" value="Calculate (with any n)" onclick="balance2()"><br>
       </div>
       <div class="card">
         <div id="output" class="container center"></div>

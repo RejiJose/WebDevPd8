@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WD Lesson 6.1a Demonstration</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <!-- Example - onload event listener -->
+  <body>
+    <script src="script.js"></script>
+    <div id="banner" class="container center">
+      <h1> Arrays </h1>
+    </div>
+    <div class="container subbanner">
+      <div>
+          <p>This example demonstrates using arrays to store large amounts of information and then accessing the information. 
+            As review demonstration reviews generating HTML while string interpolating the information
+            from the array into a table.
+          </p>
+          <p style="background-color: white;padding:10px;color:purple;font-weight: bold;">
+            let grades = [ 65, 79, 100, 59, 71, 86, 43, 24, 96, 83, 61, 70, 91, 75, 88 ];
+          </p>
+       </div>
+    </div>
+    <div class="container">
+      <div id="panel">
+        <div class="card">
+          <h3>Grade at index 1</h3>
+          <p><span class="highlight">Scenario:</span> Display the grade at index 1 in the array.</p>
+          <a onclick="example1()" class="button"> Run </a>
+        </div>
+        <div class="card">
+          <h3>Grade specified by user</h3>
+          <p><span class="highlight">Scenario:</span> Display the grade at an index(position) specified by the user.</p>
+          <input type="text" id="index" placeholder="Enter index">
+          <a onclick="example2()" class="button"> Run </a>
+        </div>
+        <div class="card">
+          <h3>All the grades</h3>
+          <p><span class="highlight">Scenario:</span> Display all the grades within a <u>table</u> structure.</p>
+          <hr>
+          <a onclick="example3()" class="button"> Run </a>
+        </div>
+      </div> 
+      <div class="card">
+        <h1>Output</h1>
+        <div id="output" class="container center"></div>
+      </div>
+    </div>
+
+    <div id="footer" class="container center">
+      <h3>Lesson 6.1a Demonstration</h3>
+    </div>  
+  </body>
+</html>

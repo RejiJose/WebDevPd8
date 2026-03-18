@@ -11,8 +11,25 @@
 */
 
 function balance(){
-
-
+// variables
+    let output = document.getElementById("output");
+    let P = parseFloat(document.getElementById("p").value);
+    let r = parseFloat(document.getElementById("r").value);
+    let years = parseInt(document.getElementById("t").value);
+    let build = "";
+    build +=`<table>
+                  <tr>  <th>Year</th>  <th>Balance</th>  </tr>`;
+    // calculate and create table rows
+    for (let t=0; t<=years; t++){
+        let A = P * Math.pow(1 + (r/100), t);
+        build += `<tr>
+                        <td>${t}</td>
+                        <td>$${A.toFixed(2)}</td>
+                  </tr>`;
+    }
+    build += "</table>";
+    // display in div
+    output.innerHTML = build;
 }
 
 /* Challenge Bonus: Allow the user to enter a value for "n". This will require you to modify as follows:
@@ -21,6 +38,31 @@ function balance(){
         3) Adjust the heading to reflect the compounding period. Below are some typical n values.
               a. n = 1 when interest is compounded yearly
               b. n = 4 when interest is compounded quarterly
-              c. n = 12 when interest is compounded monthly
-              
+              c. n = 12 when interest is compounded monthly              
 */
+function balance2(){
+// variables
+    let output = document.getElementById("output");
+    let P = parseFloat(document.getElementById("p").value);
+    let r = parseFloat(document.getElementById("r").value);
+    let n = parseInt(document.getElementById("n").value);
+    let years = parseInt(document.getElementById("t").value);
+    let build = "";
+    build +=`<table>
+                  <tr>
+                        <th>Year</th>
+                        <th>Balance</th>
+                  </tr>`;
+
+    // calculate and create table rows
+    for (let t=0; t<=years; t++){
+        let A = P * Math.pow(1 + (r/100)/n, n*t);
+        build += `<tr>
+                        <td>${t}</td>
+                        <td>$${A.toFixed(2)}</td>
+                  </tr>`;
+    }
+    build += "</table>";
+    // display in div
+    output.innerHTML = build;
+}
