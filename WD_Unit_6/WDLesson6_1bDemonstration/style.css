@@ -11,7 +11,6 @@ html,body{
   justify-content:center;
   align-items:center;
 }
-
 nav{
   background-color:cornflowerblue;
 }
@@ -39,8 +38,7 @@ nav a:hover{
   left: 0;
   right: 0;
   bottom:0px;
-}
- 
+} 
 .card{
   flex:0 0 180px;
   margin:10px;
@@ -50,7 +48,6 @@ nav a:hover{
   overflow:hidden;
   box-shadow:2px 2px 2px black;
 }
-
 .highlight{
   font-style:italic;
   color:blue;
