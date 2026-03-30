@@ -8,8 +8,8 @@ function example1(){
   let meat1 = {
     "name":"Beef Tips",
     "image":"beeftips.jpg",
-    "price":18.99,
-  }
+    "price":18.99
+  };
   console.log(meat1.name);
   console.log(meat1.image);
   console.log(meat1.price);
