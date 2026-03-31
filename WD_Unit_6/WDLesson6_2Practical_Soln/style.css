@@ -39,7 +39,6 @@ nav a:hover{
   right: 0;
   bottom:0px;
 }
- 
 .card{
   flex:1;
   margin:10px;
@@ -47,7 +46,6 @@ nav a:hover{
   border:1px solid gray;
   text-align:center;
 }
-
 .highlight{
   font-style:italic;
   color:blue;
