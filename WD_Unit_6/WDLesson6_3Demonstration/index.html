@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WD Lesson 6.3 Demonstration</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+   </head>
+  <body id="body">
+    <div id="banner" class="container center">
+      <h1> Arrays of JSON </h1>
+    </div>
+    <div class="container subbanner">
+      <div>
+        <p>This example demonstrates how to access information stored in arrays of JSON.  First step is to retreive the JSON from the array and then select the appropriate key from the JSON in order to access the information. </p>
+       </div>
+    </div>
+    <div class="container">
+      <div id="panel">
+        <div class="card">
+          <h3>Basic Access</h3>
+          <p><span class="highlight">Scenario:</span> Display individual pieces of information from JSONs located in an array to the console. 
+ </p>
+          <a onclick="example1()"> Run </a>
+        </div>
+        <div class="card">
+          <h3>Generate HTML</h3>
+          <p><span class="highlight">Scenario:</span> Generate cards for each teacher in the array using all the information in each JSON.</p>
+          <a onclick="example2()"> Run </a>
+        </div>
+      </div>
+      <div class="card">
+        <h1>Output</h1>
+        <div id="output" class="container"></div>
+      </div>
+    </div>
+
+    <div id="footer" class="container center">
+      <h3>Lesson 6.3 Demonstration</h3>
+    </div>  
+  </body>
+</html>
