@@ -5,14 +5,16 @@ let teachers = [
                 { "name":"Castro", "course":"CS Career Development", "image":"cscareerdev.jpg" }
               ];
 
-
+//prints output in Console
 function example1(){
+
   console.log(teachers[0]);
   console.log(teachers[1].course);
   console.log(teachers[2].name);
   console.log(teachers[3].image);
 }
 
+// displays info from array of JSON in a div
 function example2(){
   let output = document.getElementById("output");
   let build = "";
