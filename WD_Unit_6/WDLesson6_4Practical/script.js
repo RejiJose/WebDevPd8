@@ -13,12 +13,12 @@ async function init(){
           2) Create a variable to extract each criminal's information from the dataset.
           3) Using the variable created, generate HTML to display the information for each criminal.
 
-     Note: For the pdf of the criminal poster include the following before the string interpolated url
-     into a hyperlink in order to actually display the pdf in a new tab
+     Note: To view the PDF of the criminal poster include the following code before the string interpolated url
+     into a hyperlink in order to actually display the PDF in a new tab.
      https://mozilla.github.io/pdf.js/web/viewer.html?file=${...}
   */
 
-     
+
 
   output.innerHTML = build;
 }
