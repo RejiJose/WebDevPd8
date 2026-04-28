@@ -4,6 +4,7 @@ async function init(){
   let link = "311.json"; //let link = "https://data.cityofnewyork.us/resource/erm2-nwe9.json?$limit=1000";
   info = await fetch(link);
   data = await info.json();
+  //console.log(data);
   
   let output = document.getElementById("output");
   let build = "";
@@ -56,7 +57,61 @@ function filterByBorough(){
 }
 
 // Challenge 2: Create an event handler (function) to filter the 311 Service Request by zip code.
+function filterByZip(){
+  let output = document.getElementById("output");
+  let zip = document.getElementById("zip").value;
+  let result = document.getElementById("result");
+  
+  let build = "";
+  let ct = 0;
 
+  for(let i = 0; i < data.length; i+=1){
+    let complaint = data[i];
+    if(complaint.incident_zip == zip){
+      build += `<div class="fitted card">
+                    <h3>${complaint.complaint_type}</h3>
+                    <hr>
+                    <p>${complaint.borough}</p>
+                    <p>${complaint.incident_zip}</p>
+                    <p>${complaint.descriptor}</p>
+                    <hr>
+                    <p>${complaint.created_date}</p>
+                    <hr>
+                    <p>${complaint.agency}</p>
+                </div>`;
+      ct += 1;
+    }
+  }
+  result.innerHTML = `${ct} Results found.`
+  output.innerHTML = build;
+}
 
 // Challenge 4: Create an event handler (function) to filter the 311 Service Request by complaint type.
+function filterByComplaintType(){
+  let output = document.getElementById("output");
+  let complaint_type = document.getElementById("complaint_type").value;
+  let result = document.getElementById("result");
+  
+  let build = "";
+  let ct = 0;
 
+  for(let i = 0; i < data.length; i+=1){
+    let complaint = data[i];
+    if(complaint.complaint_type == complaint_type){
+      build += `<div class="fitted card">
+                    <h3>${complaint.complaint_type}</h3>
+                    <hr>
+                    <p>${complaint.borough}</p>
+                    <p>${complaint.incident_zip}</p>
+                    <p>${complaint.descriptor}</p>
+                    <hr>
+                    <p>${complaint.created_date}</p>
+                    <hr>
+                    <p>${complaint.agency}</p>
+                </div>`;
+      ct += 1;
+    }
+  }
+  result.innerHTML = `${ct} Results found.`
+  output.innerHTML = build;
+}
