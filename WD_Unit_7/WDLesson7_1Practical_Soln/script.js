@@ -2,7 +2,7 @@ function init(){
   //For all challenges use the function display( ) in order to output the results to the console and the webpage. 
   // The example below calls the function randint() and displays the value returned by it in the console and page.
   let secret = randint(1,10);
-  display(`Secret # is: ${secret}`);
+  display(`Random #: ${secret}`);
   
   //Challenge 1: Use the function area( ) created in helper.js to display the area of any rectangle of your choice of dimensions.
   let A = area(2, 3.5);
