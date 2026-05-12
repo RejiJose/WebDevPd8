@@ -8,7 +8,6 @@ async function init(){
   data = await info.json();
 
   output = get("output");
-  result = get("result");
   let build = "";
   let ct = 0;
 
@@ -17,8 +16,7 @@ async function init(){
 
   //Challenge 3: Display all the violations to the web page using the function card().
 
- 
-  result.innerHTML = `${ct} Results found`;
+
   output.innerHTML = build;  
 }
 

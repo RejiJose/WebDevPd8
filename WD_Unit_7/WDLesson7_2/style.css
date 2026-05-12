@@ -45,7 +45,10 @@ nav a:hover{
   margin:10px;
   padding:10px;
   border:1px solid gray;
-  text-align:center;
+  text-align:center;  
+  box-shadow:2px 2px 2px black;
+  border-radius:2px;  
+  background-color: lightblue;
 }
 
 .highlight{
@@ -67,15 +70,9 @@ nav a:hover{
   background-color:cornflowerblue;
 }
 #output{
-  display:flex;
-  flex-wrap:wrap;
+  flex-wrap:wrap;  
+  background-color: beige;
 }
-.fit{
-  width:150px;
-  height:150px;
-  object-fit:contain;
-}
-
 #leftPanel{
   flex:1;
 }
@@ -84,7 +81,11 @@ nav a:hover{
 }
 .fitted{
   max-width:200px;
-  min-width:200px;
+  min-width:200px;  
+  background-color: tan;
+}
+.card img{
+  height:100px;
 }
 #result{
   background-color: yellow;

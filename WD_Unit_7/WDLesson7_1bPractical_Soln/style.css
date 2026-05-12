@@ -78,6 +78,7 @@ nav a:hover{
 
 #leftPanel{
   flex:1;
+  max-width:300px;
 }
 #rightPanel{
   flex:2;
@@ -85,6 +86,7 @@ nav a:hover{
 .fitted{
   max-width:200px;
   min-width:200px;
+  background-color: tan;
 }
 #result{
   background-color: yellow;
