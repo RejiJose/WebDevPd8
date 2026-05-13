@@ -5,6 +5,7 @@ html,body{
 .container{
   display:flex;
   padding:10px;
+  flex-wrap:wrap;
 }
 .center{
   justify-content:center;
@@ -25,7 +26,7 @@ nav a:hover{
   color:white;
 }
 .subbanner{
-  background-color:cornflowerblue;
+  background-color:rgb(200,225,255);
 }
 #banner{
   background-color:blue;
@@ -39,18 +40,23 @@ nav a:hover{
   right: 0;
   bottom:0px;
 }
- 
+ .main{
+   background-color: tan;
+ }
 .card{
   flex:1;
   margin:10px;
   padding:10px;
   border:1px solid gray;
-  text-align:center;  
-  box-shadow:2px 2px 2px black;
-  border-radius:2px;  
-  background-color: lightblue;
+  text-align:center;
+  background-color: lightcyan;
 }
-
+#map{
+  flex:1;
+  height:400px;/* LeafletJS map requires height */
+  border-radius:10px;
+  box-shadow:2px 2px 2px black;
+}
 .highlight{
   font-style:italic;
   color:blue;
@@ -69,27 +75,19 @@ nav a:hover{
 .button:hover{
   background-color:cornflowerblue;
 }
-#output{
-  flex-wrap:wrap;  
-  background-color: beige;
-}
-#leftPanel{
+#panel{
   flex:1;
 }
-#rightPanel{
-  flex:2;
+.flash{
+  max-width:200px;
+}
+#output{
+  flex-wrap:wrap;
 }
 .fitted{
   max-width:200px;
   min-width:200px;  
-  background-color: tan;
 }
-.card img{
-  height:100px;
-}
-#result{
-  background-color: yellow;
-  color:red;
-  max-width: 200px;
-  font-size: 20px;
-}
+
+
+

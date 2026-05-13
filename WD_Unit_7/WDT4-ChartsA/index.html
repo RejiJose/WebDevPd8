@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Charts Demo A</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Discussion 1: Import necessary files -->
+    <link href="c3.css" rel="stylesheet" type="text/css" />
+    <script src="c3.js"></script>
+    <script src="d3.js"></script>
+    
+    <script src="script.js"></script>
+   </head>
+  <body>
+    <div id="banner" class="container center">
+      <h1> Charts </h1>
+    </div>
+    <div class="container subbanner">
+      <div>
+        <p>This example demonstrates how to generate charts using the <a href="https://c3js.org/">c3.js</a> JavaScript library.  c3.js library is built using the <a href="https://d3js.org/">d3.js</a> JavaScript library, hence both libraries must be loaded. There are many types of charts with various customizations that can be applied to each chart. We will focus on Line, Bar and Pie chart types with basic features.</p>
+       </div>
+    </div>
+    <div class="container">
+      <div id="panel">
+        <div class="card">
+          <h3>Chart Exploration</h3>
+          <p><span class="highlight">Scenario:</span> Understand the various components required by the c3.generate( ) function. </p>
+        <a class="button" onclick="exploringCharts()"> Display </a>
+        </div>
+        <div class="card">
+          <h3>Line Chart</h3>
+          <p><span class="highlight">Scenario:</span> Chart analyzes average grades of Math and English courses by period. </p>
+        <a class="button" onclick="lineChart()"> Display </a>
+        </div>
+        <div class="card">
+          <h3>Bar Chart</h3>
+          <p><span class="highlight">Scenario:</span> Chart analyzes average grades of Math and English courses by period. </p>
+          <a class="button" onclick="barChart()"> Display </a>
+        </div>
+        <div class="card">
+          <h3>Pie Chart</h3>
+          <p><span class="highlight">Scenario:</span> Chart displays the number of course taken by subject.</p>
+          <a class="button" onclick="pieChart()"> Display </a>
+        </div>
+      </div>
+      <div class="card">        
+        <!-- Discussion 2: Provide a div in order to display the chart. div needs an id. -->
+        <div id="chart"></div>
+      </div>
+    </div>
+
+    <div id="footer" class="container center">
+      <h3>Charts Demo A</h3>
+    </div>  
+  </body>
+</html>
