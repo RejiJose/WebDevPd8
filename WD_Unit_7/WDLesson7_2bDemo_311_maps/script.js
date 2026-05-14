@@ -24,6 +24,7 @@ async function init(){
 }
 
 function filterByBoro(){
+  leftPanel = get("leftPanel");
   let boro = get("borough").value;
   let build = "";
   

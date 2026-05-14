@@ -11,3 +11,8 @@ function showMap(lat,lon){
 
 
 }
+
+// Challenge 4: Create the function card() to generate an appropriate info card with the button to view map
+function card( info ){ 
+  
+}
