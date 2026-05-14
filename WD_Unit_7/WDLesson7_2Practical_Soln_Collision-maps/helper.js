@@ -19,3 +19,18 @@ function showMap(lat,lon){
 
   let marker = L.marker(location).addTo(map);// places marker on map
 }
+
+// Challenge 4: Create the function card() to generate an appropriate info card with the button to view map
+function card( info ){ 
+  let build = `<div class="card fitted">
+                  <h3>${info.contributing_factor_vehicle_1}</h3>
+                  <hr>
+                  <p>${info.on_street_name}</p>
+                  <h4>${info.borough}</h4>`;
+      
+                  if(info.latitude  && info.longitude){
+                    build += `<input type="button" value="Map" onclick="showMap(${info.latitude},${info.longitude})">`;
+                  }
+    build += `</div>`; 
+  return build;
+}
