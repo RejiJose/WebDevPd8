@@ -19,7 +19,7 @@ function showMap(lat,lon){
 
   let marker = L.marker(location).addTo(map);// places marker on map
 }   
-
+// function to generate an info card
 function card( info ){ 
   let build = `<div class="card fitted">
                   <h3>${info.complaint_type}</h3>
