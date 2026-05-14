@@ -3,7 +3,7 @@ function get(id){
   return document.getElementById(id);
 }
 
-// showMap() displays the map for a location [lat, lon] in the right panel
+// Challenge 3: Create the function showMap() that displays the map for a location [lat, lon]
 function showMap(lat,lon){
   let location = [lat, lon];
   //Line below needed to create the map object once.

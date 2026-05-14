@@ -19,3 +19,16 @@ function showMap(lat,lon){
 
   let marker = L.marker(location).addTo(map);// places marker on map
 }   
+
+function card( info ){ 
+  let build = `<div class="card fitted">
+                  <h3>${info.complaint_type}</h3>
+                  <hr>
+                  <p>Location: ${info.incident_address}</p>
+                  <h5>${info.borough}</h5>`;
+                  if(info.latitude && info.longitude){
+                    build += `<input type="button" value="Map" onclick="showMap( ${info.latitude}, ${info.longitude} )">`;
+                  }
+    build +=    `</div>`;
+  return build;
+}
