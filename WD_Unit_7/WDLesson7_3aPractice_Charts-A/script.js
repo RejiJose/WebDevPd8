@@ -1,5 +1,6 @@
 let data;
 
+// Arrays of information
 let math = ["Math",79.0,80.0,79.9,78.8,73.4,77.2,74.5,78.7,76.8 ];
 let english = ["English",79.7,78.8,81.6,80.6,82.3,77.4,79.5,78.6,77.9];
 let science = ["Science",78.0,81.5,81.6,81.6,82.2,82.4,81.3,80.1,78.2];
@@ -13,7 +14,7 @@ function chart(type){
   displayChart(data, "chart", type);
 }
 
-//Task 4: Create a budget that includes at least 6 items. Recall that the data has to be structured as an array of arrays.
+//Task 4: Create a array "budget" with min 6 items. Recall that budget must be structured as an array of arrays.
 let budget =[
   ["Rent",1500],
   ["Food",600],
