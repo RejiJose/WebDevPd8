@@ -50,6 +50,3 @@ function barChart(){
 function pieChart(){
   displayChart(course_count, "chart", "pie");
 }
-
-
-

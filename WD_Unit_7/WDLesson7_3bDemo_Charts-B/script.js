@@ -1,5 +1,6 @@
 //Data Source: https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9
 
+//global variables
 let data, info, output;
 
 async function init(){
@@ -9,11 +10,11 @@ async function init(){
   console.log(data);
 }
 
-function ByBorough(){
+function complaintsByBorough(){
   //Discussion 1: Define variables to keep tally of complaints by borough
   let q = 0, bk = 0, bx = 0, m = 0, s = 0;
   
-  //Discussion 2: Traverse the data and use a decision to determine which tally variable to increment.
+  //Discussion 2: Traverse the data and use a decision to aggregate data by borough.
   for(let i = 0; i < data.length; i++){
     let complaint = data[i];
     if(complaint.borough == "QUEENS"){
@@ -28,7 +29,9 @@ function ByBorough(){
       s++;
     }
   }
-  //Discussion 3: Build the data structure required for charts. (An array of arrays with the first position in each array representing the data label).
+
+  //Discussion 3: Setup the aggregated data as array of arrays to generate chart.
+  // 1st position in each array is the label for the data
   let chartData = [
     ["QUEENS", q],
     ["MANHATTAN", m],
@@ -37,11 +40,11 @@ function ByBorough(){
     ["STATEN ISLAND", s]
   ];
   
-  //Discussion 4: Retrieve the type of chart to produce from the user's selection in the drop down box.
+  //Discussion 4: Retrieve chart type via user selection from drop-down.
   let chartType = document.getElementById("chartType").value;
   
-  //Discussion 5: Display the chart of the aggregated data.
-  displayChart(chartData,"output",chartType);
+  //Discussion 5: Display chart using displayChart() function.
+  displayChart(chartData, "output", chartType);
 }
 
 
