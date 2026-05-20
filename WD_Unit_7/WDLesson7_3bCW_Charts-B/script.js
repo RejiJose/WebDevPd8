@@ -1,5 +1,6 @@
 //Data Source: https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9
 
+//global variables
 let data, info, output;
 
 async function init(){
@@ -16,27 +17,22 @@ function ByAgency(){
   //Task 1: Traverse the data and increment the appropriate tally variable using the agency of the complaint. Use the tally variable "other" to capture all the other agencies.
   for(let i = 0; i < data.length; i++){
     let complaint = data[i];
-    if(complaint.agency == "NYPD"){
-      nypd++;
-    }else if(complaint.agency == "DOT"){
-      dot++;
-    }else if(complaint.agency == "HPD"){
-      hpd++;
-    }else other++; 
+    
+
+
   }
   //Task 2: Construct the chart data using the full agency name. (Hint: Go to the data source)
   let chartData = [
-      ["NYC Police Department", nypd],
-      ["Dept of Transportation", dot],
-      ["Dept of Housing Preservation and Development", hpd],
-      ["OTHER", other]
-    ]
+      
+
+
+    ];
 
   //Task 3: Retrieve the chart type from the user via the drop down menu
-  let chartType = document.getElementById("chartType").value;
+  let chartType = 
 
   //Task 4: Display the chart of the breakdown of complaints by agency.
-  displayChart(chartData, "output", chartType);
+  displayChart(            );
 }
 
 

@@ -49,18 +49,38 @@ function accidentsByVehicle(){
   //Challenge: Create the same functionality as in the function accidentsByVehicle() above, except you will be aggregating for the following vehicle types: 'Sedan', 'Station Wagon/Sport Utility Vehicle', 'Taxi', 'Bus', 'Motorcycle' and "Other".  "Other" isn't a vehicle type but simply meant to capture all other vehicles.
 
   //Variables to keep count of vehicles by type
-  
+  let s = 0, sw = 0, t = 0, b = 0, m = 0, o = 0;
 
   //Tally the count of vehicles by type using decisions
-
-
+  for( let i = 0; i < data.length; i++ ){
+    if ( data[i].vehicle_type_code1 == "Sedan" ) {
+      s++;
+    }else if ( data[i].vehicle_type_code1 == "Station Wagon/Sport Utility Vehicle" ) {
+      sw++;
+    }else if ( data[i].vehicle_type_code1 == "Taxi" ) {
+      t++;
+    }else if ( data[i].vehicle_type_code1 == "Bus" ) {
+      b++;
+    }else if ( data[i].vehicle_type_code1 == "Motorcycle" ) {
+      m++;
+    }else {
+      o++;
+    }
+  }
   //Create data for chart (as array of arrays) with 1st position of array being label
-
+  let chartData2 = [
+    ["Sedan", s],
+    ["Station Wagon/Sport Utility Vehicle", sw],
+    ["Taxi", t],
+    ["Bus", b],
+    ["Motorcycle", m], 
+    ["Other", o]
+  ];
   
   //Retrieve chart type from user's selection of drop-down
-
+  let type = get("chartType").value;
   
   //Generate and display chart
-
-
+  displayChart(chartData2, "chart", type);  
 }
+
