@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="components.css" rel="stylesheet" type="text/css" />
+    <script src="helper.js"></script>
+    <script src="script.js"></script>
+   </head>
+   
+  <body>
+    <div id="banner" class="container center">
+      <h1> The Movie DB </h1>
+    </div>
+    <div class="container subbanner">
+      <div>
+        <p>This example demonstrates how to add functionality to generated HTML.  We add the capability to display more information including a YouTube video when you click on a card generated from the Movie DB (<a href="https://www.themoviedb.org/" target="_blank">TMDB</a>) using input provided by the user.</p>
+       </div>
+    </div>
+    <div class="container">
+    <input style="flex:1;text-align:right;" type="text" id="movie" value="batman" placeholder="Enter Movie" > &nbsp; <a class="button" onclick="getMovies()"> View </a>
+    </div>
+    <div id="output" class="container">
+
+    </div>
+    <div id="footer" class="container center">
+      <h3>Lesson 55 Practical 1</h3>
+    </div>  
+  </body>
+</html>

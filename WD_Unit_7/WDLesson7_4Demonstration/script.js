@@ -14,7 +14,7 @@ window.onload = function(){
   //Discussion 1a: Create a simple MODAL window with just text
   createModal("Click Me!","Hi There <br> I'm Hulk","modal1_output");
 
-  //Discussion 1b: Create a MODAL window using the image of the Hulk and the content created for the Hulk
+  //Discussion 1b: Create a MODAL window using the image of the Huzk and the content created for the Hulk
   createModal("<img src='heroes/hulk.gif'>", hulk, "modal2_output");
  
   //Discussion 2a: Create a simple FLIP CARD using just text
