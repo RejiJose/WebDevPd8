@@ -22,17 +22,15 @@ async function searchMeal(){
   //Create a for loop to traverse all the meals in the array. 
   for(let i = 0; i < data.meals.length; i++){
     let meal = data.meals[i];
-    //Create a collapsible object using the meal name as the 'text' value and card(meal) as the 'content' value. 
-    let collapsible = new Collapsible( meal.strMeal, card(meal) );
-    //Render the collapsible object to the div with id "output".
-    collapsible.render("output");
+    //Create a collapsible using the meal name as the 'text' value and card(meal) as the 'content' value. 
+    createCollapsible( meal.strMeal, card(meal), "output" );
   }
    
 }
 
 function getYouTube(utube_link){
   let id = utube_link.slice(32);  
-  let build = `<iframe width="320" height="180" src="https://www.youtube.com/embed/${id}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+  let build = `<iframe width="320" height="180" src="https://www.youtube.com/embed/${id}?si=tPoMsVdMdt3imVyD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
   return build;
 }
 
