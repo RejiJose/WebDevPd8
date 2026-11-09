@@ -1,5 +1,5 @@
 body{
-  font-family:arial;
+  font-family:Arial;
   /*margin:0 auto;  New */
 }
 a{
@@ -11,7 +11,7 @@ a{
   border-radius:5px;
 }
 .click_me:hover{
-  color:white !important;
+  color:white;
 }
 /* CSS Specificity
    Inline > id > class > element */
