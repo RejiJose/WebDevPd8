@@ -11,7 +11,7 @@ a{
   border-radius:5px;
 }
 .click_me:hover{
-  color:white;
+  color:white !important;
 }
 /* CSS Specificity
    Inline > id > class > element */
