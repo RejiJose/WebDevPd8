@@ -26,9 +26,10 @@ nav a:hover{
   background-color: blue;
   color: white;
 }
-/* Challenge 11: Make the font size bigger and the color of the text to blue for elements with a class of "main" */
+/* Challenge 11: Make the font size bigger (say, 24pt) and the color of the text to blue for elements with a class of "main" */
 .main{
   font-size:24pt;
   color:blue;
 }
 
+/* return to index.html for Challenge 12 */
