@@ -6,7 +6,7 @@
 
 .container div{
   flex:1;
-  background-color:white;
+  background-color:pink;
   margin:2px;
 }
 
@@ -17,6 +17,6 @@
   color:white;
 }
 
-.columns{
+.column{
   flex-direction: column;
 }
